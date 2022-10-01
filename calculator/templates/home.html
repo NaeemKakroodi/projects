@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+
+<h1 style="color:white ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" align="center">Hello {{name}}!!!!!!!</h1>
+
+<form action="operate" method="post" align="center" style="color:orange ;">
+
+    {% csrf_token %}
+
+    Enter 1st number : <input style="margin: 10px; " type="text" name="num1"><br>
+    Enter 2nd number : <input style="margin: 10px; " type="text" name="num2"><br>
+    Enter operation==>+,-,*,/,** : <input style="margin: 10px; " type="text" name="operation"><br>
+    <input style="margin: 5px; " type="submit">
+
+
+</form>
+
+
+
+{% endblock %}
